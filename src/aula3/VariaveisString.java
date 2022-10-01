@@ -1,4 +1,4 @@
-package com.victor.coursejava.aula3;
+package aula3;
 
 public class VariaveisString {
     public static void main (String[] args){

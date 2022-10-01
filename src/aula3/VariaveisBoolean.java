@@ -1,4 +1,4 @@
-package com.victor.coursejava.aula3;
+package aula3;
 
 public class VariaveisBoolean {
     public static void main (String[] args){

@@ -1,4 +1,4 @@
-package com.victor.coursejava.aula5Exercicios;
+package aula5Exercicios;
 
 import java.util.Scanner;
 

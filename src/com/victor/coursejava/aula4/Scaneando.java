@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 public class Scaneando {
     public static void main (String[] args){
-        Scanner scan = new Scanner(System.in);
+        @SuppressWarnings("resource")
+		Scanner scan = new Scanner(System.in);
 
         System.out.println("quantos anos voce tem, qual sua altura, tem pet, qual seu primeiro nome?");
         int idade = scan.nextInt();

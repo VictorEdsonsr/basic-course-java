@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Ex08 {
 
 	public static void main(String[] args) {
+		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 
 		System.out.println("Escreva o preco dos produtos: ");

@@ -1,8 +1,8 @@
 package aula7Exercicios;
+
 import java.util.Scanner;
 
-
-public class Ex18 {
+public class Ex28 {
 
 	public static void main(String[] args) {
         @SuppressWarnings("resource")
@@ -18,14 +18,12 @@ public class Ex18 {
             if (num % i == 0){
                 System.out.println("Não é primo - divisível por " + i);
                 primo = false;
-                //break;
             }
         }
         
         if (primo){
             System.out.println("É número primo");
         }
-		
 
 	}
 

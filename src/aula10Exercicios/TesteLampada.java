@@ -1,6 +1,6 @@
 package aula10Exercicios;
 
-public class Ex01 {
+public class TesteLampada {
 
 	public static void main(String[] args) {
 		Lampada lampada = new Lampada();

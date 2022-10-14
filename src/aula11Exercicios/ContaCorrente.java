@@ -3,10 +3,14 @@ package aula11Exercicios;
 
 public class ContaCorrente {
 
-	int numeroDaConta;
-	double saldo;
-	boolean status;
-	double limite;
+	private int numeroDaConta;
+	private double saldo;
+	private boolean status;
+	private double limite;
+	
+	public ContaCorrente() {
+		
+	}
 	
 	public ContaCorrente(int numeroDaConta, double saldo, boolean status, double limite) {
 		this.numeroDaConta = numeroDaConta;
@@ -16,26 +20,66 @@ public class ContaCorrente {
 	}
 	
 
+	public int getNumeroDaConta() {
+		return numeroDaConta;
+	}
+	
+	public void setNumeroDaConta(int numeroDaConta) {
+		this.numeroDaConta = numeroDaConta;
+	}
+	
+	
+	public double getSaldo() {
+		return saldo;
+	}
+	
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+	
+	public boolean isStatus() {
+		return status;
+	}
+	
+	public void setStatus(boolean status) {
+		this.status = status;
+	}
+	
+	public double getLimite() {
+		return limite;
+	}
+	
+	public void setLimite(double limite) {
+		this.limite = limite;
+	}
+	
+	
 	public double depositar(double deposito) {
+		double soma = 0;
+		
 		if(deposito < 0) {
 			System.out.println("Precisa depositar um valor acima de 0 reais");
 		}else {
-			this.saldo += deposito;
+			soma += deposito;
+			setSaldo(soma);
 			System.out.println("Voce depositou R$ " + deposito);
 		}
 		
-		return this.saldo;
+		return soma;
 	}
 	
 	public double sacar(double saque) {
+		double subtracao = 0;
+		
 		if(saque > this.saldo) {
 			System.out.println("Voce nao tem saldo suficinete");
 		}else {
-			this.saldo -= saque;
+			subtracao -= saque;
+			setSaldo(subtracao);
 			System.out.println("Voce sacou R$ " + saque);
 		}
 		
-		return this.saldo;
+		return subtracao;
 	}
 	
 	public void verSaldo() {

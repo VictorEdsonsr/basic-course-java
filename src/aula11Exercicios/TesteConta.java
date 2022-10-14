@@ -17,9 +17,9 @@ public class TesteConta {
 		byte numero;
 
 		while(flag) {
-			System.out.println("Seu numero da conta e --> " + conta.numeroDaConta);
-			System.out.println("Seu limite e --> " + conta.limite);
-			System.out.println("Seu saldo atual e --> " + conta.saldo);
+			System.out.println("Seu numero da conta e --> " + conta.getNumeroDaConta());
+			System.out.println("Seu limite e --> " + conta.getLimite());
+			System.out.println("Seu saldo atual e --> " + conta.getSaldo());
 			System.out.println("Deseja sacar - 1");
 			System.out.println("Deseja depositar - 2");
 			System.out.println("Deseja sair - 0");
@@ -29,13 +29,13 @@ public class TesteConta {
 				System.out.print("Quanto deseja sacar : ");
 				saque = input.nextDouble();
 				
-				conta.saldo = conta.sacar(saque);
+				conta.setSaldo(conta.sacar(saque));
 				conta.verSaldo();
 			}else if(numero == 2){
 				System.out.print("Quanto deseja depositar : ");
 				deposito = input.nextDouble();
 				
-				conta.saldo = conta.depositar(deposito);
+				conta.setSaldo(conta.depositar(deposito));
 				conta.verSaldo();
 			}else if(numero == 0) {
 				System.out.println("Voce saiu tchau tchau!!");
